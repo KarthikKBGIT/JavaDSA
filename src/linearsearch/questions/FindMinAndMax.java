@@ -1,6 +1,7 @@
 package linearsearch.questions;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 public class FindMinAndMax {
@@ -12,7 +13,7 @@ public class FindMinAndMax {
             arr[i] = random.nextInt(100);
         }
         int[] ans = findMinAndMax(arr);
-        System.out.println("Array: " + Arrays.asList(arr));
+        System.out.println("Array: " + List.of(arr));
         System.out.println("Min: " + ans[0] + "\nMax: " + ans[1]);
     }
     static int[] findMinAndMax(int[] arr){

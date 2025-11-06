@@ -1,8 +1,14 @@
 package linearsearch.questions;
+
+import java.util.Scanner;
+
 //Simple Linear Search
 public class LinearSearch {
     public static void main(String[] args){
-        System.out.println(linearSearch(new int[]{9,30,9,2,5,3,4}, 99));
+        int target;
+        Scanner sc = new Scanner(System.in);
+        target = sc.nextInt();
+        System.out.println(linearSearch(new int[]{9,30,9,2,5,3,4}, target));
     }
     static int linearSearch(int[] arr, int target){
         int n = arr.length;

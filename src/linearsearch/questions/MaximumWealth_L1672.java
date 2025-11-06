@@ -27,7 +27,7 @@ Explanation:
 The 2nd customer is the richest with a wealth of 10.
  */
 public class MaximumWealth_L1672 {
-    public static void main(String args[]){
+    public static void main(String[] args){
         int n = 10;
         int[][] arr = new int[n][n];
         Random random = new Random();

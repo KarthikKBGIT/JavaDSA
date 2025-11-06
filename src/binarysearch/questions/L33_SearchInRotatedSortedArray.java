@@ -56,7 +56,7 @@ public class L33_SearchInRotatedSortedArray {
         }
         return -1;
     }
-    public static int findRotationCountInRotatedSortedArray(int arr[]){
+    public static int findRotationCountInRotatedSortedArray(int[] arr){
         return searchPeakInRotatedSortedArray(arr) + 1;
     }
 }

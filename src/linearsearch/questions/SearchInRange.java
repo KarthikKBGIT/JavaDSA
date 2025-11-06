@@ -16,7 +16,7 @@ public class SearchInRange {
         int start = Math.min(ran, arr.length - ran);
         int end = Math.max(ran, arr.length - ran);
         if(searchInRange(arr, target, start, end)) System.out.printf(target + " is found in " + Arrays.toString(arr) + " within the index of " + start + " and " + end);
-        else System.out.printf(target + " is not found in " + arr.toString() + " within the index of " + start + " and " + end);
+        else System.out.printf(target + " is not found in " + Arrays.toString(arr) + " within the index of " + start + " and " + end);
     }
     static boolean searchInRange(int[] arr, int target, int start, int end){
         if(arr == null || start>end || start > arr.length || end < arr.length) return false;
