@@ -6,8 +6,12 @@ public class BubbleSortGenral {
     public static void main(String[] args) {
         //int arr[] = {5, 1, 4, 2, 8};
         int arr[] = {5, 1, 4, 2, 8, 3, 7, 6, 10, 9, 15, 12, 11, 14, 13, 20, 18, 17, 16, 19};
+        int copuyOfArr[] = new int[arr.length];
+        for(int i=0;i<arr.length;i++){
+            copuyOfArr[i] = arr[i];
+        }
         int ans[] = bubbleSort(arr);
-        int enhancedAns[] = bubbleSortEnhanced(arr);
+        int enhancedAns[] = bubbleSortEnhanced(copuyOfArr);
         for(int i=0;i<ans.length;i++){
             System.out.print(" " + ans[i] + " ");
         }
