@@ -5,7 +5,7 @@ import java.util.Random;
 public class BubbleSortGenral {
     public static void main(String[] args) {
         //int arr[] = {5, 1, 4, 2, 8};
-        int arr[] = {5, 1, 4, 2, 8, 3, 7, 6, 10, 9, 15, 12, 11, 14, 13, 20, 18, 17, 16, 19};
+        int arr[] = {-1, -10, 5, 1, 4, 2, 8, 3, 7, 6, 10, 9, 15, 12, 11, 14, 13, 20, 18, 17, 16, 19, -20, -15, -12, -11, -14, -13, -20, -18, -17, -16, -19};
         int copuyOfArr[] = new int[arr.length];
         for(int i=0;i<arr.length;i++){
             copuyOfArr[i] = arr[i];
