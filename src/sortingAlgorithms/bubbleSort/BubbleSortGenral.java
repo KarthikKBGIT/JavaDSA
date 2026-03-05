@@ -30,15 +30,18 @@ public class BubbleSortGenral {
     }
     public static int[] bubbleSortEnhanced(int[] arr){
         for(int i=0;i<arr.length;i++){
+            // if there is no swapping in the inner loop then it means the array is already sorted and we can break the loop
             boolean isSwapped = false;
             for(int j=1;j<arr.length - i;j++){
                 if(arr[j] < arr[j-1]){
                     int temp = arr[j-1];
                     arr[j-1] = arr[j];
                     arr[j] = temp;
+                    // if there is swapping then we need to continue the loop and check for the next element
                     isSwapped = true;
                 }
             }
+            // if there is no swapping in the inner loop then it means the array is already sorted and we can break the loop
             if(!isSwapped){
                 break;
             }
