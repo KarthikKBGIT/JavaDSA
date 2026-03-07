@@ -1,6 +1,6 @@
-package sortingAlgorithms;
+package sortingAlgorithms.cyclicSort;
 
-public class cyclicSort {
+public class CyclicSort {
 
     public static void main(String[] args) {
         int arr[] = {3,5,2,1,4};
