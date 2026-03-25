@@ -66,6 +66,32 @@ public class SingleLinkedList {
         System.out.print("null");
     }
 
+    public void deleteAtFirst(){
+        if(head == null)
+            return;
+        head = head.next;
+        --size;
+    }
+
+    public void deleteAtLast(){
+        if(head == null)
+            return;
+        if(head.next == null){
+            head = null;
+            tail = null;
+            --size;
+        }
+        else{
+            Node temp = head;
+            while(temp.next == tail){
+                temp = temp.next;
+            }
+            temp.next = null;
+            tail = temp;
+            --size;
+        }
+    }
+
 
     private class Node{
         int data;
