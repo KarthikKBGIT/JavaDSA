@@ -10,6 +10,10 @@ public class Main {
         list.insertAtIndex(4, 1);
         list.insertAtIndex(5, 3);
         list.displayAll();
+        list.deleteAtFirst();
+        list.displayAll();
+        list.deleteAtLast();
+        list.displayAll();
     }
 
 }

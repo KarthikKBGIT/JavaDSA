@@ -64,6 +64,7 @@ public class SingleLinkedList {
             temp = temp.next;
         }
         System.out.print("null");
+        System.out.println();
     }
 
     public void deleteAtFirst(){
@@ -83,7 +84,7 @@ public class SingleLinkedList {
         }
         else{
             Node temp = head;
-            while(temp.next == tail){
+            while(temp.next != tail){
                 temp = temp.next;
             }
             temp.next = null;
