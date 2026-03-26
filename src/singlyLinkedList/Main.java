@@ -16,6 +16,8 @@ public class Main {
         list.displayAll();
         list.deleteAtIndex(1);
         list.displayAll();
+        System.out.println(list.get(0));
+        System.out.println(list.get(1));
     }
 
 }

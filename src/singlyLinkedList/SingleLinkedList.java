@@ -114,6 +114,17 @@ public class SingleLinkedList {
 
     }
 
+    public int get(int index){
+        if(size == 0 || index < 0 || index >= size){
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+        }
+        Node temp = head;
+        for(int i=0;i<index;i++){
+            temp = temp.next;
+        }
+        return temp.data;
+    }
+
 
     private class Node{
         int data;
