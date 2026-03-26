@@ -93,6 +93,27 @@ public class SingleLinkedList {
         }
     }
 
+    public void deleteAtIndex(int index){
+
+        if(size == 0 || index < 0 || index >= size){
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+        }
+        if(index == 0){
+            deleteAtFirst();
+        }
+        else if(index == size - 1)
+            deleteAtLast();
+        else{
+            Node temp = head;
+            for(int i=0;i<index-1;i++){
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+            --size;
+        }
+
+    }
+
 
     private class Node{
         int data;
