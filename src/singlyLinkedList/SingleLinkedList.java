@@ -125,6 +125,17 @@ public class SingleLinkedList {
         return temp.data;
     }
 
+    public Node find(int data){
+        Node temp = head;
+        while(temp != null){
+            if(temp.data == data){
+                return temp;
+            }
+            temp = temp.next;
+        }
+        return null;
+    }
+
 
     private class Node{
         int data;
